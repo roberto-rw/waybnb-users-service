@@ -26,10 +26,10 @@ public class KeycloakProvider {
     private String username;
 
     @Value("${keycloak.password}")
-    private static String password;
+    private String password;
 
     @Value("${keycloak.client-secret}")
-    private static String clientSecret;
+    private String clientSecret;
 
     public RealmResource getRealmResource() {
        Keycloak keycloack = KeycloakBuilder.builder()
